@@ -5,14 +5,14 @@ import Animal from './animal.jsx'
 module.exports = React.createClass({
 
   render: function () {
-    console.log("piclist", this.props)
+  
     var animals = []
     animals = this.props.piclist
 
     return (
-    <div id='pics' className='span8'>
+    <div id='pics' >
       {animals.map(function(a){
-        return <Animal name={a.name} img={a.img} sound={a.sound} />
+        return <Animal name={a.name} img={a.img} sound={a.sound} found={a.found}/>
       })}
     </div>
     )

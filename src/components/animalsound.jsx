@@ -6,7 +6,7 @@ module.exports = React.createClass({
   render: function () {
     return (
       <div className="sound">
-        meow
+        {this.props.sound}
       </div>
     )
   }
