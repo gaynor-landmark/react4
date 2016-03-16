@@ -10,38 +10,28 @@ a {
   color: #00B7FF;
 }
 
-div.img {
+div.animal {
     margin: 5px;
     border: 1px solid #ccc;
-    /*float: left;*/
+    float: left;
     width: 180px;
 
 }
 
-div.img:hover {
+div.animal:hover {
     border: 3px solid #777;
 }
 
-div.img img {
+div.animal img {
     width: 100%;
     height: auto;
 }
 
-div.sound {
+div.animal .sound {
     padding: 15px;
     text-align: center;
 }
-div.animal {
+div.animal .name {
     padding: 15px;
     text-align: center;
-}
-
-.row{
-  background-color: red;
-}
-.span4{
-  background-color: blue;
-}
-.span8{
-  background-color: green;
 }

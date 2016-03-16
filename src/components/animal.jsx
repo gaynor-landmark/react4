@@ -7,12 +7,13 @@ import AnimalName from './animalname.jsx'
 module.exports = React.createClass({
 
   render: function () {
+    console.log(this.props)
     return (
       <div>
         <div className='animal'>
-          <AnimalName />
-          <AnimalImage />
-          <AnimalSound />
+          <AnimalName name={this.props.name}/>
+          <AnimalImage img={this.props.img}/>
+          <AnimalSound sound={this.props.sound}/>
         </div>
       </div>
     )
