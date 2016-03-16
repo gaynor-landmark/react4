@@ -2,13 +2,16 @@
 import React from 'react'
 
 module.exports = React.createClass({
+ handleClick: function(e){
+  console.log("handling click", e.target)
+  this.props.check(this.props.name)
+ },
 
   render: function () {
-    console.log("img", this.props)
     return (
-      <div className="img" id='img1'>
+      <div className="img" >
         <a href='#'>
-          <img src={this.props.img} width="300" height="200"></img>
+          <img src={this.props.img} onClick={this.handleClick} alt={this.props.name} width="300" height="200"></img>
         </a>
       </div>
     )
